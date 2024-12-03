@@ -3,7 +3,7 @@
 This project aims to develop a deep learning model for predicting cardiovascular disease (CVD) by utilizing artificial neural networks (ANN) and convolutional neural networks (CNN) to analyze both structured and unstructured CVD-related data.
 
 ![Cardiovascular Disease Prediction Project Interface](figures/interface.png)
-![Use Case Diagram](figures/interface.png.png)
+![Use Case Diagram](figures/implementation.png)
 ![Project Implementation](figures/Use_Case_Diagram.png)
 ## 🔍 Research Questions
 
