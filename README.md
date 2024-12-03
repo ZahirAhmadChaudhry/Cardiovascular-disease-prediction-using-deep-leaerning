@@ -135,11 +135,11 @@ To deploy this project locally, follow these steps:
 
 ## 📰 Project Report
 
-For more comprehensive details on the study, results, and future recommendations, review the [Project Report](https://https://github.com/ZahirAhmadChaudhry/Cardiovascular-disease-prediction-using-deep-leaerning/Report/Ahmad-Zahir-FinalYearProjectDocument.pdf).
+For more comprehensive details on the study, results, and future recommendations, review the [Project Report](https://github.com/ZahirAhmadChaudhry/Cardiovascular-disease-prediction-using-deep-leaerning/blob/main/Report/Ahmad-Zahir-FinalYearProjectDocument.pdf).
 
 ## 📄 License
 
-This project is distributed under the terms set forth by the [MIT License](https://https://github.com/ZahirAhmadChaudhry/Cardiovascular-disease-prediction-using-deep-leaerning/blob/main/LICENSE).
+This project is distributed under the terms set forth by the [MIT License](https://github.com/ZahirAhmadChaudhry/Cardiovascular-disease-prediction-using-deep-leaerning/blob/main/LICENSE).
 
 ## 🌐 Additional Resources
 
