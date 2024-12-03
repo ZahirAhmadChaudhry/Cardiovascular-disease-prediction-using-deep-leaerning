@@ -2,8 +2,9 @@
 
 This project aims to develop a deep learning model for predicting cardiovascular disease (CVD) by utilizing artificial neural networks (ANN) and convolutional neural networks (CNN) to analyze both structured and unstructured CVD-related data.
 
-![Cardiovascular Disease Prediction Project Overview Diagram](project\_diagrams/cvd\_project\_overview.png)
-
+![Cardiovascular Disease Prediction Project Interface](figures/interface.png)
+![Use Case Diagram](figures/interface.png.png)
+![Project Implementation](figures/Use_Case_Diagram.png)
 ## 🔍 Research Questions
 
 - Can we accurately predict the presence of cardiovascular disease based on given features?
@@ -48,23 +49,20 @@ Access the `src` directory containing source codes implementing custom layers, o
 - Python
 
 📊 **Data Analysis and Visualization**:
-- Pandas: Data manipulation and analysis
-- Matplotlib: Static visualizations
-- Plotly: Interactive visualizations
-- Seaborn: Statistical data visualization
-- Bokeh: Modern web browsers visualizations
+- Pandas
+- Matplotlib
+- Plotly
+- Seaborn
+- Bokeh
 
 🤖 **Machine Learning and Deep Learning**:
-- TensorFlow: Open-source platform for developing and deploying ML/DL models
-- Keras API: User-friendly neural network library built upon TensorFlow
-- PyTorch Lightning: High-performance research framework for DL applications
-- FastAI: Deep learning library providing user-friendly access to advanced AI capabilities
-- Hugging Face Transformers: State-of-the-art pretrained transformer models
-- scikit-learn: Collection of efficient tools for statistical learning tasks
-
-📦 **Packages**:
-- numpy: Fundamental package for scientific computing
-- tqdm: Progress bar indicator for long-running computational processes
+- TensorFlow
+- Keras
+- PyTorch Lightning
+- FastAI
+- scikit-learn
+- numpy
+- tqdm
 
 📚 **Other Tools and Frameworks**:
 - ipynb: Jupyter Notebook format for reproducible research workflows
@@ -104,20 +102,10 @@ To deploy this project locally, follow these steps:
 
 5. Begin working on your chosen task within the appropriate directory.
 
-## 🤝 Contribution guidelines
-
-We appreciate any contributions made to enhance the quality and functionality of this project. To ensure smooth collaboration, please adhere to these guidelines when submitting modifications:
-
-1. Ensure compliance with [PEP8 Style Guide](https://pep8.org/) standards for consistency across the entire codebase.
-2. Write clear and concise comments explaining complex sections and highlighting critical decisions made during coding.
-3. Submit individual Pull Request for every distinct change made to avoid merge conflicts.
-4. Test newly added features thoroughly to guarantee correctness and prevent introducing bugs.
-5. Refer to existing issues labeled 'good first issue', 'help wanted', or similar labels indicating areas requiring improvements.
-
 ## 📰 Project Report
 
-For more comprehensive details on the study, results, and future recommendations, review the [Project Report](https://github.com/YOUR_USERNAME/CV-Prediction-Project/blob/master/docs/FinalReport.pdf).
+For more comprehensive details on the study, results, and future recommendations, review the [Project Report](https://https://github.com/ZahirAhmadChaudhry/Cardiovascular-disease-prediction-using-deep-leaerning/Report/Ahmad-Zahir-FinalYearProjectDocument.pdf).
 
 ## 📄 License
 
-This project is distributed under the terms set forth by the [MIT License](https://github.com/YOUR_USERNAME/CV-Prediction-Project/blob/master/LICENSE).
+This project is distributed under the terms set forth by the [MIT License](https://https://github.com/ZahirAhmadChaudhry/Cardiovascular-disease-prediction-using-deep-leaerning/blob/main/LICENSE).
