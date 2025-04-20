@@ -206,7 +206,9 @@ def predict_from_tabular_data(inputs, model=None):
         if prediction_value > 0.5:
             return ("The person is having heart disease", prediction_value)
         else:
-            return ("The person does not have any heart disease", prediction_value)
+            # For negative predictions, the confidence is (1 - prediction_value)
+            # This ensures confidence represents certainty of the prediction
+            return ("The person does not have any heart disease", 1.0 - prediction_value)
     
     # Normal prediction with TensorFlow model
     try:
@@ -223,9 +225,12 @@ def predict_from_tabular_data(inputs, model=None):
         
         # Determine result
         if prediction_value > 0.5:
+            # For positive predictions, use the raw prediction value
             return ("The person is having heart disease", prediction_value)
         else:
-            return ("The person does not have any heart disease", prediction_value)
+            # For negative predictions, the confidence is (1 - prediction_value)
+            # This ensures confidence represents certainty of the prediction
+            return ("The person does not have any heart disease", 1.0 - prediction_value)
     except Exception as e:
         logger.error(f"Error during tabular prediction: {str(e)}")
         raise
