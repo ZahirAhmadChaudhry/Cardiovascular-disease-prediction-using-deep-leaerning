@@ -9,6 +9,7 @@ This interface demonstrates how users interact with the system. Key features inc
 - Back-end integration of machine learning algorithms for prediction analysis.
 
 ![Cardiovascular Disease Prediction Project Interface](figures/interface.png)
+![Cardiovascular Disease Prediction Project Interface](figures/interface2.png)
 
 ---
 
