@@ -3,19 +3,22 @@
 import numpy as np
 import streamlit as st
 import tensorflow as tf
-from tensorflow.keras.preprocessing import image
-from tensorflow.keras.applications.mobilenet_v2 import MobileNetV2,preprocess_input as mobilenet_v2_preprocess_input
-from streamlit_option_menu import option_menu
 from PIL import Image, ImageOps
+import os
+from streamlit_option_menu import option_menu
 
-tb_model = tf.keras.models.load_model(r"C:/FYP/Application/Saved_model/tb_mdl.h5")
+# Get the correct path regardless of where the script is run from
+base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+tb_model_path = os.path.join(base_dir, "Application", "Saved_model", "tb_mdl.h5")
+img_model_path = os.path.join(base_dir, "Application", "Saved_model", "img_mdl.h5")
 
-# Sidbar for Navigation
+tb_model = tf.keras.models.load_model(tb_model_path)
 
+# Sidebar for Navigation
 with st.sidebar:
     selected = option_menu('Coronary Artery Disease Prediction System',
                            
-                           ['Predit by Filling Up Form',
+                           ['Predict by Filling Up Form',
                             'Predict Using Images'],
                            
                            icons = ['activity','heart'],
@@ -23,8 +26,8 @@ with st.sidebar:
                            
                            default_index = 0)
 
-#Page for Tabular Data
-if (selected == 'Predit by Filling Up Form'):
+# Page for Tabular Data
+if (selected == 'Predict by Filling Up Form'):
     
     # page title
     st.title('Heart Disease Prediction Using Deep Learning')
@@ -70,9 +73,6 @@ if (selected == 'Predit by Filling Up Form'):
     with col1:
         thal = st.text_input('thal: 0 = normal; 1 = fixed defect; 2 = reversable defect')
         
-        
-     
-     
     # code for Prediction
     heart_diagnosis = ''
     
@@ -84,42 +84,41 @@ if (selected == 'Predit by Filling Up Form'):
         inReshaped = npArray.reshape(1,-1)
         heart_prediction = tb_model.predict(inReshaped)                          
         
-        if (heart_prediction[0] == 1):
+        if (heart_prediction[0] > 0.5):
           heart_diagnosis = 'The person is having heart disease'
         else:
           heart_diagnosis = 'The person does not have any heart disease'
         
     st.success(heart_diagnosis)
 
-st.set_option('deprecation.showfileUploaderEncoding', False)
-
-@st.cache(allow_output_mutation=True)
-
+# Use cache_resource instead of cache for model loading (new in Streamlit)
+@st.cache_resource
 def load_model():
-        model = tf.keras.models.load_model('C:/FYP/Application/Saved_model/img_mdl.h5')
-        return model
+    model = tf.keras.models.load_model(img_model_path)
+    return model
 
 
 def predict_class(img, model):
+    image = img
+    data = np.ndarray(shape=(1,299,299,3), dtype=np.float32)
+    size = (299, 299)
+    # Update to use LANCZOS instead of deprecated ANTIALIAS
+    image = ImageOps.fit(image, size, Image.LANCZOS)
+    image_array = np.asarray(image)
+    # Normalize image
+    Nr_image_array = (image_array.astype(np.float32) / 255.0) - 1
 
-        image = img
-        data = np.ndarray(shape=(1,299,299,3), dtype=np.float32)
-        size = (299, 299)
-        image = ImageOps.fit(image, size, Image.ANTIALIAS)
-        image_array = np.asarray(image)
-        Nr_image_array = (image_array.astype(np.float32) / 255.0) -1
+    data[0] = Nr_image_array
 
-        data[0] = Nr_image_array
+    prediction = model.predict(data)
 
-        prediction = model.predict(data)
-
-        return prediction
+    return prediction
 
 if (selected == 'Predict Using Images'):  
     #page title
     st.title('Heart Disease Prediction Using Deep Learning')
     model = load_model()
-    file = st.file_uploader("Upload an image of a flower", type=["jpg", "png"])
+    file = st.file_uploader("Upload an image of a heart scan", type=["jpg", "png"])
     if file is None:
         st.text('Waiting for upload....')
     else:
