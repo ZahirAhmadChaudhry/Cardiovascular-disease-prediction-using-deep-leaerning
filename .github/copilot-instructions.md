@@ -70,3 +70,7 @@ Cardiovascular-disease-prediction-using-deep-leaerning/
 - Streamlit for web interface
 - NumPy for numerical processing
 - Pillow for image processing
+
+# Copilot Instructions
+
+Virtual Environment Setup is already done. You can directly run the application using the commands of windows command prompt or terminal.

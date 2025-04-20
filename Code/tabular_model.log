@@ -1,0 +1,111 @@
+2025-04-20 13:35:18,349 - CardiovascularTabularModel - INFO - Loading data from: D:\My_data\Uni\M2\Projects\Cardiovascular-disease-prediction-using-deep-leaerning\dataset\Tabular_data.csv
+2025-04-20 13:35:18,358 - CardiovascularTabularModel - INFO - Data loaded successfully with shape: (308, 14)
+2025-04-20 13:35:18,358 - CardiovascularTabularModel - INFO - Dataset information:
+2025-04-20 13:35:18,358 - CardiovascularTabularModel - INFO - Columns: ['age', 'sex', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach', 'exang', 'oldpeak', 'slope', 'ca', 'thal', 'target']
+2025-04-20 13:35:18,365 - CardiovascularTabularModel - INFO - Data types: age           int64
+sex           int64
+cp            int64
+trestbps      int64
+chol          int64
+fbs           int64
+restecg       int64
+thalach       int64
+exang         int64
+oldpeak     float64
+slope         int64
+ca            int64
+thal          int64
+target      float64
+dtype: object
+2025-04-20 13:35:18,367 - CardiovascularTabularModel - INFO - Missing values: 0
+2025-04-20 13:35:19,461 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-04-20 13:35:19,469 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-04-20 13:35:19,566 - CardiovascularTabularModel - INFO - Target distribution: {1.0: 165, 0.0: 138, 0.6: 2, 0.5: 1, 0.3: 1, 0.4: 1}
+2025-04-20 13:35:20,081 - CardiovascularTabularModel - INFO - Feature correlations with target:
+target      1.000000
+cp          0.426938
+thalach     0.420432
+slope       0.345858
+restecg     0.134114
+fbs        -0.026394
+chol       -0.081945
+trestbps   -0.142142
+age        -0.222027
+sex        -0.279769
+thal       -0.343831
+ca         -0.388005
+oldpeak    -0.426906
+exang      -0.434208
+Name: target, dtype: float64
+2025-04-20 13:35:21,367 - CardiovascularTabularModel - INFO - Using 'target' as the target column
+2025-04-20 13:35:21,367 - CardiovascularTabularModel - ERROR - Error in data preprocessing: The least populated class in y has only 1 member, which is too few. The minimum number of groups for any class cannot be less than 2.
+2025-04-20 13:40:15,765 - CardiovascularTabularModel - INFO - Loading data from: D:\My_data\Uni\M2\Projects\Cardiovascular-disease-prediction-using-deep-leaerning\dataset\Tabular_data.csv
+2025-04-20 13:40:15,765 - CardiovascularTabularModel - INFO - Data loaded successfully with shape: (308, 14)
+2025-04-20 13:40:15,765 - CardiovascularTabularModel - INFO - Dataset information:
+2025-04-20 13:40:15,765 - CardiovascularTabularModel - INFO - Columns: ['age', 'sex', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach', 'exang', 'oldpeak', 'slope', 'ca', 'thal', 'target']
+2025-04-20 13:40:15,765 - CardiovascularTabularModel - INFO - Data types: age           int64
+sex           int64
+cp            int64
+trestbps      int64
+chol          int64
+fbs           int64
+restecg       int64
+thalach       int64
+exang         int64
+oldpeak     float64
+slope         int64
+ca            int64
+thal          int64
+target      float64
+dtype: object
+2025-04-20 13:40:15,765 - CardiovascularTabularModel - INFO - Missing values: 0
+2025-04-20 13:40:15,914 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-04-20 13:40:15,914 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-04-20 13:40:16,041 - CardiovascularTabularModel - INFO - Target distribution: {1.0: 165, 0.0: 138, 0.6: 2, 0.5: 1, 0.3: 1, 0.4: 1}
+2025-04-20 13:40:16,448 - CardiovascularTabularModel - INFO - Feature correlations with target:
+target      1.000000
+cp          0.426938
+thalach     0.420432
+slope       0.345858
+restecg     0.134114
+fbs        -0.026394
+chol       -0.081945
+trestbps   -0.142142
+age        -0.222027
+sex        -0.279769
+thal       -0.343831
+ca         -0.388005
+oldpeak    -0.426906
+exang      -0.434208
+Name: target, dtype: float64
+2025-04-20 13:40:17,592 - CardiovascularTabularModel - INFO - Using 'target' as the target column
+2025-04-20 13:40:17,592 - CardiovascularTabularModel - INFO - Target converted to binary. New distribution: {1: 170, 0: 138}
+2025-04-20 13:40:17,592 - CardiovascularTabularModel - INFO - Data split: 246 training samples, 62 test samples
+2025-04-20 13:40:17,592 - CardiovascularTabularModel - INFO - Using StandardScaler for feature scaling
+2025-04-20 13:40:17,602 - CardiovascularTabularModel - INFO - Building model with hidden layers: [26, 13, 8]
+2025-04-20 13:40:17,697 - tensorflow - WARNING - From D:\My_data\Uni\M2\Projects\Cardiovascular-disease-prediction-using-deep-leaerning\.venvCNN\lib\site-packages\keras\src\backend.py:873: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+2025-04-20 13:40:17,864 - CardiovascularTabularModel - INFO - Starting training for up to 1000 epochs with batch size 32
+2025-04-20 13:40:18,217 - tensorflow - WARNING - From D:\My_data\Uni\M2\Projects\Cardiovascular-disease-prediction-using-deep-leaerning\.venvCNN\lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+
+2025-04-20 13:40:18,617 - tensorflow - WARNING - From D:\My_data\Uni\M2\Projects\Cardiovascular-disease-prediction-using-deep-leaerning\.venvCNN\lib\site-packages\keras\src\engine\base_layer_utils.py:384: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+
+2025-04-20 13:40:48,833 - CardiovascularTabularModel - INFO - Training completed in 30.97 seconds
+2025-04-20 13:40:48,966 - CardiovascularTabularModel - INFO - Model evaluation on test set:
+2025-04-20 13:40:48,966 - CardiovascularTabularModel - INFO - accuracy: 0.8065
+2025-04-20 13:40:48,966 - CardiovascularTabularModel - INFO - precision: 0.7619
+2025-04-20 13:40:48,966 - CardiovascularTabularModel - INFO - recall: 0.9412
+2025-04-20 13:40:48,966 - CardiovascularTabularModel - INFO - f1_score: 0.8421
+2025-04-20 13:40:48,982 - CardiovascularTabularModel - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.90      0.64      0.75        28
+           1       0.76      0.94      0.84        34
+
+    accuracy                           0.81        62
+   macro avg       0.83      0.79      0.80        62
+weighted avg       0.82      0.81      0.80        62
+
+2025-04-20 13:40:49,605 - CardiovascularTabularModel - INFO - Training history plots saved
+2025-04-20 13:40:49,627 - CardiovascularTabularModel - INFO - Model saved to D:\My_data\Uni\M2\Projects\Cardiovascular-disease-prediction-using-deep-leaerning\Saved_model\tb_mdl.h5
+2025-04-20 13:40:49,630 - CardiovascularTabularModel - INFO - Scaler saved to D:\My_data\Uni\M2\Projects\Cardiovascular-disease-prediction-using-deep-leaerning\Saved_model\scaler.joblib

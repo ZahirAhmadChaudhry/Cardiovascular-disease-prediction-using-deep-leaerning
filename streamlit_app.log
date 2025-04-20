@@ -1,0 +1,19 @@
+2025-04-20 13:42:08,956 - CardiovascularPredictionApp - INFO - Base directory: D:\My_data\Uni\M2\Projects\Cardiovascular-disease-prediction-using-deep-leaerning
+2025-04-20 13:42:08,956 - CardiovascularPredictionApp - INFO - Base directory: D:\My_data\Uni\M2\Projects\Cardiovascular-disease-prediction-using-deep-leaerning
+2025-04-20 13:42:08,957 - CardiovascularPredictionApp - INFO - Tabular model path: D:\My_data\Uni\M2\Projects\Cardiovascular-disease-prediction-using-deep-leaerning\Saved_model\tb_mdl.h5
+2025-04-20 13:42:08,958 - CardiovascularPredictionApp - INFO - Tabular model path: D:\My_data\Uni\M2\Projects\Cardiovascular-disease-prediction-using-deep-leaerning\Saved_model\tb_mdl.h5
+2025-04-20 13:42:08,958 - CardiovascularPredictionApp - INFO - Image model path: D:\My_data\Uni\M2\Projects\Cardiovascular-disease-prediction-using-deep-leaerning\Saved_model\img_mdl.h5
+2025-04-20 13:42:08,958 - CardiovascularPredictionApp - INFO - Image model path: D:\My_data\Uni\M2\Projects\Cardiovascular-disease-prediction-using-deep-leaerning\Saved_model\img_mdl.h5
+2025-04-20 13:42:08,974 - CardiovascularPredictionApp - INFO - Loading tabular model from D:\My_data\Uni\M2\Projects\Cardiovascular-disease-prediction-using-deep-leaerning\Saved_model\tb_mdl.h5
+2025-04-20 13:42:09,124 - tensorflow - WARNING - From D:\My_data\Uni\M2\Projects\Cardiovascular-disease-prediction-using-deep-leaerning\.venvCNN\lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+
+2025-04-20 13:42:09,353 - CardiovascularPredictionApp - INFO - Tabular model loaded successfully
+2025-04-20 13:42:19,202 - CardiovascularPredictionApp - INFO - Base directory: D:\My_data\Uni\M2\Projects\Cardiovascular-disease-prediction-using-deep-leaerning
+2025-04-20 13:42:19,202 - CardiovascularPredictionApp - INFO - Tabular model path: D:\My_data\Uni\M2\Projects\Cardiovascular-disease-prediction-using-deep-leaerning\Saved_model\tb_mdl.h5
+2025-04-20 13:42:19,202 - CardiovascularPredictionApp - INFO - Image model path: D:\My_data\Uni\M2\Projects\Cardiovascular-disease-prediction-using-deep-leaerning\Saved_model\img_mdl.h5
+2025-04-20 13:42:19,202 - CardiovascularPredictionApp - INFO - Generating sample data for testing
+2025-04-20 13:42:23,525 - CardiovascularPredictionApp - INFO - Base directory: D:\My_data\Uni\M2\Projects\Cardiovascular-disease-prediction-using-deep-leaerning
+2025-04-20 13:42:23,526 - CardiovascularPredictionApp - INFO - Tabular model path: D:\My_data\Uni\M2\Projects\Cardiovascular-disease-prediction-using-deep-leaerning\Saved_model\tb_mdl.h5
+2025-04-20 13:42:23,526 - CardiovascularPredictionApp - INFO - Image model path: D:\My_data\Uni\M2\Projects\Cardiovascular-disease-prediction-using-deep-leaerning\Saved_model\img_mdl.h5
+2025-04-20 13:42:23,560 - CardiovascularPredictionApp - INFO - Running prediction on tabular data
+2025-04-20 13:42:23,869 - CardiovascularPredictionApp - INFO - Prediction complete: 2.479457592459433e-36
