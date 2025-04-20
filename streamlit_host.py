@@ -8,9 +8,14 @@ import os
 from streamlit_option_menu import option_menu
 
 # Get the correct path regardless of where the script is run from
-base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-tb_model_path = os.path.join(base_dir, "Application", "Saved_model", "tb_mdl.h5")
-img_model_path = os.path.join(base_dir, "Application", "Saved_model", "img_mdl.h5")
+base_dir = os.path.dirname(os.path.abspath(__file__))
+tb_model_path = os.path.join(base_dir, "Saved_model", "tb_mdl.h5")
+img_model_path = os.path.join(base_dir, "Saved_model", "img_mdl.h5")
+
+# Print paths for debugging
+print(f"Base directory: {base_dir}")
+print(f"Tabular model path: {tb_model_path}")
+print(f"Image model path: {img_model_path}")
 
 tb_model = tf.keras.models.load_model(tb_model_path)
 

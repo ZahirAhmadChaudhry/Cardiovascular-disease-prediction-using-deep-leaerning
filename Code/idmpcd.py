@@ -11,11 +11,6 @@ Original file is located at
 Tabular Data
 """
 
-#!pip install tensorflow-gpu
-
-from google.colab import drive
-drive.mount('/content/drive')
-
 """# **Importing Libraries**"""
 
 ## importing Tensorflow 
